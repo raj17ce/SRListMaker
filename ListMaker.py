@@ -15,6 +15,7 @@ for i in words:
     if(len(i) > 1):
         if(i[0] == '$' and (i[1] < '0' or i[1] > '9') and i[1] != '('):
             i = i.replace(')','')
+            i = i.replace('-','')
             tickers.append(i)
 
 tickers = list(dict.fromkeys(tickers))
