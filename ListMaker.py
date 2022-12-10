@@ -17,6 +17,7 @@ for i in words:
             i = i.replace(')','')
             i = i.replace('-','')
             i = i.replace(':','')
+            i = i.replace(',','')
             tickers.append(i)
 
 tickers = list(dict.fromkeys(tickers))
